@@ -14,9 +14,15 @@ body,
 .app {
   height: 100%;
   width: 100%;
-  @apply text-sm;
-  @apply bg-white;
-  @apply dark:bg-black;
+  font-size: 0.875rem; /* equivalent to text-sm */
+  background-color: white; /* equivalent to bg-white */
+}
+
+html.dark,
+body.dark,
+#root.dark,
+.app.dark {
+  background-color: black; /* equivalent to dark:bg-black */
 }
 
 @layer base {
