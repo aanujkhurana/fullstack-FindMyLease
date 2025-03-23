@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rimraf dist && npx",
+    "start": "npm run build && node dist/index.js",
+    "dev": "npm run build && concurrently \"tsc -w\" \"nodemon --exec ts-nod src/index.js\""
   },
   "keywords": [],
   "author": "",
