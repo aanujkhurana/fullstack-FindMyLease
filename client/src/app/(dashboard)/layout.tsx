@@ -18,8 +18,8 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
     if (authUser) {
       const userRole = authUser.userRole?.toLowerCase();
       if (
-        (userRole === "manager" && pathname.startsWith("/tenants")) ||
-        (userRole === "tenant" && pathname.startsWith("/managers"))
+        (userRole === "manager" && pathname?.startsWith("/tenants")) ||
+        (userRole === "tenant" && pathname?.startsWith("/managers"))
       ) {
         router.push(
           userRole === "manager"
@@ -37,19 +37,23 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   if (!authUser?.userRole) return null;
 
   return (
-    <SidebarProvider>
-      <div className="min-h-screen w-full bg-primary-100">
-        <Navbar />
-        <div style={{ marginTop: `${NAVBAR_HEIGHT}px` }}>
-          <main className="flex">
-            <Sidebar userType={authUser.userRole.toLowerCase()} />
-            <div className="flex-grow transition-all duration-300">
-              {children}
-            </div>
-          </main>
-        </div>
-      </div>
-    </SidebarProvider>
+<SidebarProvider>
+  <div className="min-h-screen w-full bg-primary-100">
+    <Navbar />
+    <div style={{ marginTop: `${NAVBAR_HEIGHT}px` }}>
+    <main
+  className="grid transition-all duration-300"
+  style={{
+    gridTemplateColumns: `16rem 1fr`,
+  }}
+>
+  <Sidebar userType={authUser.userRole.toLowerCase()} />
+  <div className="p-4">{children}</div>
+</main>
+    </div>
+  </div>
+</SidebarProvider>
+
   );
 };
 
