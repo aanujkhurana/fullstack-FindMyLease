@@ -227,7 +227,8 @@ const BillingHistory = ({ payments }: { payments: Payment[] }) => {
 };
 
 const Residence = () => {
-  const { id } = useParams();
+  const params = useParams();
+  const id = params?.id as string;
   const { data: authUser } = useGetAuthUserQuery();
   const {
     data: property,
