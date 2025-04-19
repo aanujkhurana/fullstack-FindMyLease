@@ -220,7 +220,7 @@ import {
               handleFilterChange("propertyType", value, null)
             }
           >
-            <SelectTrigger className="w-32 rounded-xl border-primary-400">
+            <SelectTrigger className="w-46 rounded-xl border-primary-400">
               <SelectValue placeholder="Home Type" />
             </SelectTrigger>
             <SelectContent className="bg-white">
