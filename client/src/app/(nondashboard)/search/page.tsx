@@ -19,7 +19,7 @@ const SearchPage = () => {
   );
 
   useEffect(() => {
-    const initialFilters = Array.from(searchParams.entries()).reduce(
+    const initialFilters = Array.from(searchParams?.entries() || []).reduce(
       (acc: any, [key, value]) => {
         if (key === "priceRange" || key === "squareFeet") {
           acc[key] = value.split(",").map((v) => (v === "" ? null : Number(v)));
