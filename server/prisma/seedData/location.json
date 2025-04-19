@@ -1,92 +1,92 @@
 [
   {
     "id": 1,
-    "country": "United States",
-    "city": "Pasadena",
-    "state": "CA",
-    "address": "123 Colorado Blvd",
-    "postalCode": "91105",
-    "coordinates": "POINT(-118.144516 34.147785)"
+    "country": "Australia",
+    "city": "Gold Coast",
+    "state": "QLD",
+    "address": "123 Cavill Ave",
+    "postalCode": "4217",
+    "coordinates": "POINT(153.4290 -28.0027)"
   },
   {
     "id": 2,
-    "country": "United States",
-    "city": "Santa Monica",
-    "state": "CA",
-    "address": "456 Ocean Ave",
-    "postalCode": "90401",
-    "coordinates": "POINT(-118.496513 34.013654)"
+    "country": "Australia",
+    "city": "Surfers Paradise",
+    "state": "QLD",
+    "address": "456 Orchid Ave",
+    "postalCode": "4217",
+    "coordinates": "POINT(153.4316 -28.0035)"
   },
   {
     "id": 3,
-    "country": "United States",
-    "city": "Burbank",
-    "state": "CA",
-    "address": "789 Hollywood Way",
-    "postalCode": "91505",
-    "coordinates": "POINT(-118.328661 34.180839)"
+    "country": "Australia",
+    "city": "Broadbeach",
+    "state": "QLD",
+    "address": "789 Surf Parade",
+    "postalCode": "4218",
+    "coordinates": "POINT(153.4329 -28.0296)"
   },
   {
     "id": 4,
-    "country": "United States",
-    "city": "Long Beach",
-    "state": "CA",
-    "address": "101 Pine Ave",
-    "postalCode": "90802",
-    "coordinates": "POINT(-118.192604 33.766720)"
+    "country": "Australia",
+    "city": "Southport",
+    "state": "QLD",
+    "address": "101 Scarborough St",
+    "postalCode": "4215",
+    "coordinates": "POINT(153.4131 -27.9676)"
   },
   {
     "id": 5,
-    "country": "United States",
-    "city": "New York",
-    "state": "NY",
-    "address": "555 Manhattan Ave",
-    "postalCode": "10001",
-    "coordinates": "POINT(-74.005941 40.712784)"
+    "country": "Australia",
+    "city": "Burleigh Heads",
+    "state": "QLD",
+    "address": "555 James St",
+    "postalCode": "4220",
+    "coordinates": "POINT(153.4510 -28.1020)"
   },
   {
     "id": 6,
-    "country": "United States",
-    "city": "Malibu",
-    "state": "CA",
-    "address": "888 Malibu Road",
-    "postalCode": "90265",
-    "coordinates": "POINT(-118.774518 34.025922)"
+    "country": "Australia",
+    "city": "Palm Beach",
+    "state": "QLD",
+    "address": "888 Palm Beach Ave",
+    "postalCode": "4221",
+    "coordinates": "POINT(153.4813 -28.1183)"
   },
   {
     "id": 7,
-    "country": "United States",
-    "city": "Glendale",
-    "state": "CA",
-    "address": "777 Brand Blvd",
-    "postalCode": "91203",
-    "coordinates": "POINT(-118.254708 34.142508)"
+    "country": "Australia",
+    "city": "Robina",
+    "state": "QLD",
+    "address": "777 Robina Town Centre Dr",
+    "postalCode": "4226",
+    "coordinates": "POINT(153.3845 -28.0751)"
   },
   {
     "id": 8,
-    "country": "United States",
-    "city": "Torrance",
-    "state": "CA",
-    "address": "555 Torrance Blvd",
-    "postalCode": "90503",
-    "coordinates": "POINT(-118.352575 33.835849)"
+    "country": "Australia",
+    "city": "Coolangatta",
+    "state": "QLD",
+    "address": "555 Marine Parade",
+    "postalCode": "4225",
+    "coordinates": "POINT(153.5383 -28.1661)"
   },
   {
     "id": 9,
-    "country": "United States",
-    "city": "Miami",
-    "state": "FL",
-    "address": "1234 Ocean Dr",
-    "postalCode": "33139",
-    "coordinates": "POINT(-80.130045 25.782551)"
+    "country": "Australia",
+    "city": "Helensvale",
+    "state": "QLD",
+    "address": "123 Discovery Dr",
+    "postalCode": "4212",
+    "coordinates": "POINT(153.3145 -27.9230)"
   },
   {
     "id": 10,
-    "country": "United States",
-    "city": "Beverly Hills",
-    "state": "CA",
-    "address": "789 Rodeo Dr",
-    "postalCode": "90210",
-    "coordinates": "POINT(-118.400356 34.073620)"
+    "country": "Australia",
+    "city": "Hope Island",
+    "state": "QLD",
+    "address": "789 Sickle Ave",
+    "postalCode": "4212",
+    "coordinates": "POINT(153.3653 -27.8714)"
   }
 ]
