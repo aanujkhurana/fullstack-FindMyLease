@@ -36,6 +36,6 @@ fullstack-FindMyLease/
 ├── client/         # Next.js frontend (hosted on Amplify)
 ├── server/         # Backend (hosted on EC2)
 │   ├── prisma/     # DB schema, seed, and migrations
-│   └── api/        # REST/GraphQL endpoints
+│   └── src/        # REST/GraphQL endpoints
 ├── docs/           # Architecture, ERD, Figma UI previews
 └── README.md
