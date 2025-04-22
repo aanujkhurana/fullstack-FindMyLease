@@ -148,7 +148,7 @@ npm run dev
 
 ---
 
-## 🔁 User Flow (Mermaid)
+## 🔁 User Flow
 
 ```mermaid
 sequenceDiagram
@@ -273,10 +273,9 @@ The app will now be running locally at:
 - Frontend: `http://localhost:3000`  
 - Backend API: `http://localhost:3001`
 
----
-
 👏 You're all set! Submit a pull request once you're done contributing.
 
+---
 
 ## 📄 License
 
