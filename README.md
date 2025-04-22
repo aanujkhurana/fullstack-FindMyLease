@@ -162,29 +162,6 @@ sequenceDiagram
   Backend-->>Client: Send data
 ```
 
-```mermaid
-graph TD
-    A[Client] --> B[AWS Amplify (Frontend)]
-    A --> C[Amazon Cognito (Auth)]
-    A --> D[Amazon S3 (Images)]
-
-    B --> E[API Gateway]
-
-    subgraph AWS Cloud
-        subgraph VPC [Virtual Private Cloud (VPC)]
-            E --> F[EC2 (Backend) in Public Subnet]
-            F --> G[RDS (PostgreSQL DB) in Private Subnet]
-        end
-    end
-
-    style B fill:#ffdddd,stroke:#ff4444
-    style C fill:#ddf,stroke:#44f
-    style D fill:#dfd,stroke:#4f4
-    style E fill:#ffe,stroke:#cc4
-    style F fill:#fdf,stroke:#d4f
-    style G fill:#eef,stroke:#44f
-```
-
 
 ---
 
