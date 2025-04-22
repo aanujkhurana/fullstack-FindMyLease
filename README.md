@@ -19,7 +19,7 @@
 
 ## Quick Links
 
-- 🚀 [Live Site](https://your-live-url.com)
+- 🚀 [Live Site](https://main.dykb851k9y38f.amplifyapp.com)
 - 🎨 [Figma Design Preview](./docs/ui-preview.jpg)
 - 🧩 [Entity Relationship Diagram](./docs/entity-diagram.jpg)
 
