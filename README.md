@@ -17,19 +17,19 @@
 ---
 
 ## 🚀 Live Site
-![Live Site](https://your-live-url.com)
+[Live Site](https://your-live-url.com)
 
 ## 🎨 UI Preview
-![Properties Search](./docs/Properties%20Search.jpg)
+[Properties Search](./docs/Properties%20Search.jpg)
 
 ## 🔐 Authentication Flow
-![Auth Flow](./docs/Authentication%20Flow.jpg)
+[Auth Flow](./docs/Authentication%20Flow.jpg)
 
 ## 🧩 Entity Relationships
-![ERD](./docs/Properties,%20Payments,%20Leases,%20Applications.jpg)
+[ERD](./docs/Properties,%20Payments,%20Leases,%20Applications.jpg)
 
 ## ☁️ AWS Architecture
-![AWS Infra](./docs/AWS%20Architecture.jpg)
+[AWS Infra](./docs/AWS%20Architecture.jpg)
 
 
 ---
@@ -176,6 +176,31 @@ sequenceDiagram
   DB-->>Backend: Return results
   Backend-->>Client: Send data
 ```
+
+```
+graph TD
+    A[Client] --> B[AWS Amplify (Frontend)]
+    A --> C[Amazon Cognito (Auth)]
+    A --> D[Amazon S3 (Images)]
+
+    B --> E[API Gateway]
+
+    subgraph AWS Cloud
+        subgraph VPC [Virtual Private Cloud (VPC)]
+            E --> F[EC2 (Backend) in Public Subnet]
+            F --> G[RDS (PostgreSQL DB) in Private Subnet]
+        end
+    end
+
+    style B fill:#ffdddd,stroke:#ff4444
+    style C fill:#ddf,stroke:#44f
+    style D fill:#dfd,stroke:#4f4
+    style E fill:#ffe,stroke:#cc4
+    style F fill:#fdf,stroke:#d4f
+    style G fill:#eef,stroke:#44f
+
+```
+
 
 ---
 
