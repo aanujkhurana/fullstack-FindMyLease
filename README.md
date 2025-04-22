@@ -21,11 +21,10 @@
 - 🚀 [Live Site](https://your-live-url.com)
 - 🎨 [Figma Design Preview](./docs/ui-preview.png)
 - 🧩 [Entity Relationship Diagram](./docs/entity-diagram.png)
-- 🧪 [CodeSandbox Client](https://codesandbox.io/p/github/aanujkhurana/fullstack-FindMyLease/tree/main/client)
 
 ---
 
-## 🧠 Architecture (Mermaid Diagram)
+## 🧠 Architecture
 
 ```mermaid
 graph TD
@@ -285,5 +284,4 @@ Licensed under [MIT License](./LICENSE)
 
 ---
 
-> Built with ☁️ and ❤️ by Anuj Khurana – pushing boundaries in fullstack and cloud-native development.
-```
+> Built with ☁️ and ❤️.
