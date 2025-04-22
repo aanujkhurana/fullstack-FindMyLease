@@ -17,17 +17,15 @@
 ---
 
 
-## 🔗 Quick Links
+## Quick Links
 
 - 🚀 [Live Site](https://your-live-url.com)
 - 🎨 [Figma Design Preview](./docs/ui-preview.png)
 - 🧩 [Entity Relationship Diagram](./docs/entity-diagram.png)
-- 🧪 [CodeSandbox Client](https://codesandbox.io/p/github/aanujkhurana/fullstack-FindMyLease/tree/main/client)
-
 
 ---
 
-## 🧠 Architecture
+## Architecture
 
 ```mermaid
 graph TD
@@ -58,65 +56,62 @@ fullstack-FindMyLease/
 
 ---
 
-## 🧪 Local Development Setup
+## Local Development Steps;
 
-### 1️⃣ Clone the Repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/aanujkhurana/fullstack-FindMyLease.git
 cd fullstack-FindMyLease
 ```
 
----
+### 2. Environment Setup
 
-### 2️⃣ Environment Setup
-
-#### 🔹 client/.env
+#### client/.env
 
 ```env
-NEXT_PUBLIC_API_BASE_URL=http://localhost:90
+NEXT_PUBLIC_API_BASE_URL=http://localhost:3001
 NEXT_PUBLIC_AWS_COGNITO_USER_POOL_ID=
 NEXT_PUBLIC_AWS_COGNITO_USER_POOL_CLIENT_ID=
 NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN=
 ```
 
-#### 🔹 server/.env
+#### server/.env
 
 ```env
 DATABASE_URL="postgresql://postgres:0000@localhost:5432/findmylease?schema=public"
 S3_BUCKET_NAME="findmylease-s3-image"
-PORT=90
+PORT=3002
 ```
 
 > 🔁 Both `client` and `server` have their own `.env` files
 
----
 
-### 3️⃣ Install Dependencies
+### 3. Install Dependencies
 
-> The project uses `.npmrc` with `legacy-peer-deps=true` to allow React 19 compatibility with older packages.
-
-#### 🔹 client
+#### Frontend
 
 ```bash
 cd client
 npm install
 ```
 
-#### 🔹 server
+#### Backend
 
 ```bash
-cd ../server
+cd ./server
 npm install
 ```
 
 ---
 
-### 4️⃣ Prisma Setup
+### 4. Prisma Setup
 
 In `server/`:
 
 ```bash
+cd server/
+
 npx prisma migrate reset
 npm run prisma:generate
 npx prisma migrate dev --name init
@@ -125,19 +120,22 @@ npm run seed
 
 ---
 
-### 5️⃣ Start the Backend (via PM2)
-
-In `server/`:
+### Start the Backend (via PM2 or Npde)
 
 ```bash
+cd server/
+
 pm2 start ecosystem.config.js
+or
+npn run dev
+
 ```
 
-> Port will be set to `90` from `.env`
+> Port will be set to `3002` from `.env`
 
 ---
 
-### 6️⃣ Start the Frontend
+### Start the Frontend
 
 In a new terminal:
 
@@ -146,12 +144,12 @@ cd client
 npm run dev
 ```
 
-> Frontend will be live at: `http://localhost:3000`  
-> Backend API served from: `http://localhost:90`
+> Frontend will be live at: `http://localhost:3001`  
+> Backend API served from: `http://localhost:3002`
 
 ---
 
-## 🔁 User Flow
+## User Flow
 
 ```mermaid
 sequenceDiagram
@@ -173,115 +171,36 @@ sequenceDiagram
 
 ---
 
-## ✅ Tech Stack
+## Tech Stack
 
 - **Frontend**: Next.js 13+, Mapbox, Cognito Auth, Tailwind CSS
 - **Backend**: Node.js, Express, Prisma ORM
 - **Database**: PostgreSQL (RDS)
 - **Cloud**: AWS S3, EC2, Amplify, API Gateway, VPC, Cognito
 - **Dev Tools**: PM2, Postman, Figma, pgAdmin, Mermaid
-- **Bonus**: `.npmrc` for React 19 legacy support
+- **Extra**: `.npmrc` for React 19 legacy support
 
 ---
 
-## 🤝 Contributing
+## Contribution
 
-To contribute to **FindMyLease**, follow these steps:
+To contribute to **FindMyLease**:
 
-### 1️⃣ Clone the Repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/aanujkhurana/fullstack-FindMyLease.git
 cd fullstack-FindMyLease
 ```
-
 This will download the full project including both frontend (`client`) and backend (`server`) folders.
 
----
-
-### 2️⃣ Set Up Environment Variables
-
-You'll need to create two `.env` files:
-
-#### 🔹 `client/.env`
-
-```env
-NEXT_PUBLIC_API_BASE_URL=http://localhost:90
-NEXT_PUBLIC_AWS_COGNITO_USER_POOL_ID=
-NEXT_PUBLIC_AWS_COGNITO_USER_POOL_CLIENT_ID=
-NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN=
-```
-
-#### 🔹 `server/.env`
-
-```env
-DATABASE_URL="postgresql://postgres:0000@localhost:5432/findmylease?schema=public"
-S3_BUCKET_NAME="findmylease-s3-image"
-PORT=90
-```
-
-Make sure your local database and AWS credentials match these variables.
+Create a bracnh
+ 
+Submit a pull request once you're done contributing.
 
 ---
 
-### 3️⃣ Install Dependencies
-
-Install all packages for both the frontend and backend:
-
-#### 🔹 Frontend
-
-```bash
-cd client
-npm install
-```
-
-#### 🔹 Backend
-
-```bash
-cd ../server
-npm install
-```
-
-> Note: This project includes a `.npmrc` file with `legacy-peer-deps=true` for React 19 compatibility.
-
----
-
-### 4️⃣ Start the Backend
-
-From the `server/` directory:
-
-```bash
-pm2 start ecosystem.config.js
-```
-
-Or if you want to use `npm` directly for development:
-
-```bash
-cd server
-npm run dev
-```
-
----
-
-### 5️⃣ Start the Frontend
-
-From the `client/` directory:
-
-```bash
-cd client
-npm run dev
-```
-
-The app will now be running locally at:
-
-- Frontend: `http://localhost:3000`  
-- Backend API: `http://localhost:3001`
-
-👏 You're all set! Submit a pull request once you're done contributing.
-
----
-
-## 📄 License
+## License
 
 Licensed under [MIT License](./LICENSE)
 
