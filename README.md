@@ -1,4 +1,4 @@
-<h1 align="center">🏢 fullstack-FindMyLease</h1>
+<h1 align="center">🏢 FindMyLease - Rental Management System</h1>
 
 <p align="center">
   <strong>An enterprise-grade rental property management platform</strong><br/>
