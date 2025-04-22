@@ -16,21 +16,6 @@
 
 ---
 
-## 🚀 Live Site
-[Live Site](https://your-live-url.com)
-
-## 🎨 UI Preview
-[Properties Search](./docs/Properties%20Search.jpg)
-
-## 🔐 Authentication Flow
-[Auth Flow](./docs/Authentication%20Flow.jpg)
-
-## 🧩 Entity Relationships
-[ERD](./docs/Properties,%20Payments,%20Leases,%20Applications.jpg)
-
-## ☁️ AWS Architecture
-[AWS Infra](./docs/AWS%20Architecture.jpg)
-
 
 ---
 
@@ -177,7 +162,7 @@ sequenceDiagram
   Backend-->>Client: Send data
 ```
 
-```
+```mermaid
 graph TD
     A[Client] --> B[AWS Amplify (Frontend)]
     A --> C[Amazon Cognito (Auth)]
@@ -198,7 +183,6 @@ graph TD
     style E fill:#ffe,stroke:#cc4
     style F fill:#fdf,stroke:#d4f
     style G fill:#eef,stroke:#44f
-
 ```
 
 
