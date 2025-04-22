@@ -16,11 +16,21 @@
 
 ---
 
-## 🔗 Quick Links
+## 🚀 Live Site
+![Live Site](https://your-live-url.com)
 
-- 🚀 [Live Site](https://your-live-url.com)
-- 🎨 [Figma Design Preview](./docs/ui-preview.png)
-- 🧩 [Entity Relationship Diagram](./docs/entity-diagram.png)
+## 🎨 UI Preview
+![Properties Search](./docs/Properties%20Search.jpg)
+
+## 🔐 Authentication Flow
+![Auth Flow](./docs/Authentication%20Flow.jpg)
+
+## 🧩 Entity Relationships
+![ERD](./docs/Properties,%20Payments,%20Leases,%20Applications.jpg)
+
+## ☁️ AWS Architecture
+![AWS Infra](./docs/AWS%20Architecture.jpg)
+
 
 ---
 
