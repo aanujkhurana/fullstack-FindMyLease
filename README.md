@@ -17,6 +17,14 @@
 ---
 
 
+## 🔗 Quick Links
+
+- 🚀 [Live Site](https://your-live-url.com)
+- 🎨 [Figma Design Preview](./docs/ui-preview.png)
+- 🧩 [Entity Relationship Diagram](./docs/entity-diagram.png)
+- 🧪 [CodeSandbox Client](https://codesandbox.io/p/github/aanujkhurana/fullstack-FindMyLease/tree/main/client)
+
+
 ---
 
 ## 🧠 Architecture
