@@ -20,8 +20,8 @@
 ## Quick Links
 
 - 🚀 [Live Site](https://your-live-url.com)
-- 🎨 [Figma Design Preview](./docs/ui-preview.png)
-- 🧩 [Entity Relationship Diagram](./docs/entity-diagram.png)
+- 🎨 [Figma Design Preview](./docs/ui-preview.jpg)
+- 🧩 [Entity Relationship Diagram](./docs/entity-diagram.jpg)
 
 ---
 
