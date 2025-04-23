@@ -16,6 +16,14 @@
   <img src="https://img.shields.io/badge/License-MIT-green.svg" />
 </p>
 
+## 🚀 Tech Stack
+
+- **Frontend**: [Next.js 13+](https://nextjs.org/), [Mapbox](https://www.mapbox.com/), [Amazon Cognito](https://aws.amazon.com/cognito/), [Tailwind CSS](https://tailwindcss.com/)
+- **Backend**: [Node.js](https://nodejs.org/), [Express](https://expressjs.com/), [Prisma ORM](https://www.prisma.io/)
+- **Database**: [PostgreSQL (RDS)](https://aws.amazon.com/rds/postgresql/)
+- **Cloud Infrastructure**: [AWS S3](https://aws.amazon.com/s3/), [EC2](https://aws.amazon.com/ec2/), [Amplify](https://aws.amazon.com/amplify/), [API Gateway](https://aws.amazon.com/api-gateway/), [VPC](https://aws.amazon.com/vpc/), [Cognito](https://aws.amazon.com/cognito/)
+- **Dev Tools**: [PM2](https://pm2.keymetrics.io/), [Postman](https://www.postman.com/), [Figma](https://www.figma.com/), [pgAdmin](https://www.pgadmin.org/), [Mermaid](https://mermaid.js.org/)
+- **Extras**: `.npmrc` for [React 19](https://react.dev/) legacy support
 
 ## ✨ Features
 
@@ -27,35 +35,13 @@
 - 🗂️ Organized backend via Node.js and Prisma
 - ☁️ Fully deployed using AWS services (Amplify, EC2, RDS, S3, API Gateway)
 
-<p align="center">
-  <img src="https://img.shields.io/github/contributors/aanujkhurana/fullstack-FindMyLease?style=flat-square" />
-  <img src="https://img.shields.io/github/issues-pr/aanujkhurana/fullstack-FindMyLease?style=flat-square" />
-  <img src="https://img.shields.io/github/last-commit/aanujkhurana/fullstack-FindMyLease?style=flat-square" />
-  <!-- Code coverage badge (example from Codecov) -->
-  <img src="https://codecov.io/gh/aanujkhurana/fullstack-FindMyLease/branch/main/graph/badge.svg?token=YOUR_CODECOV_TOKEN"/>
-</p>
-
-
-
-
-## 🚀 Tech Stack
-
-- **Frontend**: [Next.js 13+](https://nextjs.org/), [Mapbox](https://www.mapbox.com/), [Amazon Cognito](https://aws.amazon.com/cognito/), [Tailwind CSS](https://tailwindcss.com/)
-- **Backend**: [Node.js](https://nodejs.org/), [Express](https://expressjs.com/), [Prisma ORM](https://www.prisma.io/)
-- **Database**: [PostgreSQL (RDS)](https://aws.amazon.com/rds/postgresql/)
-- **Cloud Infrastructure**: [AWS S3](https://aws.amazon.com/s3/), [EC2](https://aws.amazon.com/ec2/), [Amplify](https://aws.amazon.com/amplify/), [API Gateway](https://aws.amazon.com/api-gateway/), [VPC](https://aws.amazon.com/vpc/), [Cognito](https://aws.amazon.com/cognito/)
-- **Dev Tools**: [PM2](https://pm2.keymetrics.io/), [Postman](https://www.postman.com/), [Figma](https://www.figma.com/), [pgAdmin](https://www.pgadmin.org/), [Mermaid](https://mermaid.js.org/)
-- **Extras**: `.npmrc` for [React 19](https://react.dev/) legacy support
-
----
 
 ## 🔗 Quick Links
 
 - 🌐 [Live Demo](https://main.dykb851k9y38f.amplifyapp.com)
-- 🎨 [UI Design (Figma)](./docs/ui-preview.jpg)
+- 🎨 [UI Design](./docs/ui-preview.jpg)
 - 📊 [Entity Relationship Diagram](./docs/entity-diagram.jpg)
 
----
 
 ## 🏗️ Architecture
 
@@ -68,8 +54,6 @@ graph TD
   C --> F[Cognito - Auth]
   C --> G[VPC - Network]
 ```
-
----
 
 ## 🔄 User Flow
 
@@ -90,7 +74,6 @@ sequenceDiagram
   Backend-->>Client: Send data
 ```
 
----
 
 ## 📁 Folder Structure
 
@@ -106,8 +89,6 @@ fullstack-FindMyLease/
 │   └── ecosystem.config.js  # PM2 config
 └── docs/           # Diagrams, UI mocks
 ```
-
----
 
 ## 🧪 Local Development Setup
 
@@ -155,8 +136,6 @@ npx prisma migrate dev --name init
 npm run seed
 ```
 
----
-
 ### 5. Start Backend
 
 ```bash
@@ -167,7 +146,6 @@ npm run dev
 
 > Server runs on port `3002`.
 
----
 
 ### 6. Start Frontend
 
@@ -180,7 +158,6 @@ npm run dev
 
 > App runs at [http://localhost:3001](http://localhost:3001)
 
----
 
 ## 🤝 Contribution Guide
 
@@ -199,4 +176,4 @@ This project is licensed under the [MIT License](./LICENSE)
 
 ---
 
-> Built with ☁️ cloud power and ❤️ passion for clean architecture.
+> Built with ☁️ cloud power and ❤️.
