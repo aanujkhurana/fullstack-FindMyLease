@@ -74,6 +74,27 @@ sequenceDiagram
   Backend-->>Client: Send data
 ```
 
+## 🧭 Entity Flow Diagram
+
+```mermaid
+flowchart TD
+  Manager --> Applications
+  Manager --> Property
+
+  Property --> Location
+  Property --> Leases
+  Leases --> Payments
+
+  Applications -->|Approved?| Decision{Approved?}
+  Decision -->|YES| LeadsToLease
+
+  LeadsToLease --> Tenant
+  Location --> Tenant
+  Tenant --> CurrentResidences
+
+  LeadsToLease --> Payments
+```
+
 
 ## 📁 Folder Structure
 
