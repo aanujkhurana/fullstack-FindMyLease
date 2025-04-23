@@ -1,8 +1,10 @@
-<h1 align="center">🏢 FindMyLease - Rental Management System</h1>
+<h1 align="center">FindMyLease - Rental Management System 🏢</h1>
 
 <p align="center">
   <strong>An enterprise-grade rental property management platform</strong><br/>
-  Built with <code>Next.js</code>, <code>AWS</code>, and <code>PostgreSQL</code> for seamless listings, secure logins, and tenant/manager management.
+  Built with <a href="https://nextjs.org/" target="_blank"><code>Next.js</code></a>, 
+  <a href="https://aws.amazon.com/" target="_blank"><code>AWS</code></a>, and 
+  <a href="https://www.postgresql.org/" target="_blank"><code>PostgreSQL</code></a> for seamless listings, secure authentication, and tenant/manager management.
 </p>
 
 <p align="center">
@@ -16,24 +18,26 @@
 
 ---
 
-## Tech Stack
+## 🚀 Tech Stack
 
-- **Frontend**: Next.js 13+, Mapbox, Cognito Auth, Tailwind CSS
-- **Backend**: Node.js, Express, Prisma ORM
-- **Database**: PostgreSQL (RDS)
-- **Cloud**: AWS S3, EC2, Amplify, API Gateway, VPC, Cognito
-- **Dev Tools**: PM2, Postman, Figma, pgAdmin, Mermaid
-- **Extra**: `.npmrc` for React 19 legacy support
+- **Frontend**: [Next.js 13+](https://nextjs.org/), [Mapbox](https://www.mapbox.com/), [Amazon Cognito](https://aws.amazon.com/cognito/), [Tailwind CSS](https://tailwindcss.com/)
+- **Backend**: [Node.js](https://nodejs.org/), [Express](https://expressjs.com/), [Prisma ORM](https://www.prisma.io/)
+- **Database**: [PostgreSQL (RDS)](https://aws.amazon.com/rds/postgresql/)
+- **Cloud Infrastructure**: [AWS S3](https://aws.amazon.com/s3/), [EC2](https://aws.amazon.com/ec2/), [Amplify](https://aws.amazon.com/amplify/), [API Gateway](https://aws.amazon.com/api-gateway/), [VPC](https://aws.amazon.com/vpc/), [Cognito](https://aws.amazon.com/cognito/)
+- **Dev Tools**: [PM2](https://pm2.keymetrics.io/), [Postman](https://www.postman.com/), [Figma](https://www.figma.com/), [pgAdmin](https://www.pgadmin.org/), [Mermaid](https://mermaid.js.org/)
+- **Extras**: `.npmrc` for [React 19](https://react.dev/) legacy support
 
+---
 
-## Quick Links
+## 🔗 Quick Links
 
-- 🚀 [Live Site](https://main.dykb851k9y38f.amplifyapp.com)
-- 🎨 [Figma Design Preview](./docs/ui-preview.jpg)
-- 🧩 [Entity Relationship Diagram](./docs/entity-diagram.jpg)
+- 🌐 [Live Demo](https://main.dykb851k9y38f.amplifyapp.com)
+- 🎨 [UI Design (Figma)](./docs/ui-preview.jpg)
+- 📊 [Entity Relationship Diagram](./docs/entity-diagram.jpg)
 
+---
 
-## Architecture
+## 🏗️ Architecture
 
 ```mermaid
 graph TD
@@ -45,7 +49,9 @@ graph TD
   C --> G[VPC - Network]
 ```
 
-## User Flow
+---
+
+## 🔄 User Flow
 
 ```mermaid
 sequenceDiagram
@@ -64,6 +70,7 @@ sequenceDiagram
   Backend-->>Client: Send data
 ```
 
+---
 
 ## 📁 Folder Structure
 
@@ -80,7 +87,9 @@ fullstack-FindMyLease/
 └── docs/           # Diagrams, UI mocks
 ```
 
-## Local Development Steps;
+---
+
+## 🧪 Local Development Setup
 
 ### 1. Clone the Repository
 
@@ -89,9 +98,9 @@ git clone https://github.com/aanujkhurana/fullstack-FindMyLease.git
 cd fullstack-FindMyLease
 ```
 
-### 2. Environment Setup
+### 2. Configure Environment Variables
 
-#### client/.env
+#### `client/.env`
 
 ```env
 NEXT_PUBLIC_API_BASE_URL=http://localhost:3001
@@ -100,7 +109,7 @@ NEXT_PUBLIC_AWS_COGNITO_USER_POOL_CLIENT_ID=
 NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN=
 ```
 
-#### server/.env
+#### `server/.env`
 
 ```env
 DATABASE_URL="postgresql://postgres:0000@localhost:5432/findmylease?schema=public"
@@ -108,57 +117,39 @@ S3_BUCKET_NAME="findmylease-s3-image"
 PORT=3002
 ```
 
-> 🔁 Both `client` and `server` have their own `.env` files
-
-
 ### 3. Install Dependencies
 
-#### Frontend
-
 ```bash
-cd client
-npm install
-```
-
-#### Backend
-
-```bash
-cd ./server
-npm install
+cd client && npm install
+cd ../server && npm install
 ```
 
 ---
 
-### 4. Prisma Setup
-
-In `server/`:
+### 4. Prisma Setup (server)
 
 ```bash
-cd server/
-
 npx prisma migrate reset
 npm run prisma:generate
 npx prisma migrate dev --name init
 npm run seed
 ```
 
+---
 
-### Start the Backend (via PM2 or Npde)
+### 5. Start Backend
 
 ```bash
-cd server/
-
 pm2 start ecosystem.config.js
-or
-npn run dev
-
+# or
+npm run dev
 ```
 
-> Port will be set to `3002` from `.env`
+> Server runs on port `3002`.
 
 ---
 
-### Start the Frontend
+### 6. Start Frontend
 
 In a new terminal:
 
@@ -167,31 +158,25 @@ cd client
 npm run dev
 ```
 
-> Frontend will be live at: `http://localhost:3001`  
-> Backend API served from: `http://localhost:3002`
-
-
-## Contribution
-
-To contribute to **FindMyLease**:
-
-### Clone the Repository
-
-```bash
-git clone https://github.com/aanujkhurana/fullstack-FindMyLease.git
-cd fullstack-FindMyLease
-```
-This will download the full project including both frontend (`client`) and backend (`server`) folders.
-
-Create a bracnh
- 
-Submit a pull request once you're done contributing.
-
-
-## License
-
-Licensed under [MIT License](./LICENSE)
+> App runs at [http://localhost:3001](http://localhost:3001)
 
 ---
 
-> Built with ☁️ and ❤️.
+## 🤝 Contribution Guide
+
+To contribute:
+
+1. Fork and clone the repository
+2. Create a new branch
+3. Make your changes
+4. Submit a pull request
+
+---
+
+## 📜 License
+
+This project is licensed under the [MIT License](./LICENSE)
+
+---
+
+> Built with ☁️ cloud power and ❤️ passion for clean architecture.
