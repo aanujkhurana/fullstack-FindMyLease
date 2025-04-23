@@ -16,7 +16,27 @@
   <img src="https://img.shields.io/badge/License-MIT-green.svg" />
 </p>
 
----
+
+## ✨ Features
+
+- 🔐 Secure login with AWS Cognito
+- 🏠 Property listings with location via Mapbox
+- 📷 Image uploads to AWS S3
+- 👥 Role-based access for tenants and managers
+- 📊 Admin dashboard with analytics (planned)
+- 🗂️ Organized backend via Node.js and Prisma
+- ☁️ Fully deployed using AWS services (Amplify, EC2, RDS, S3, API Gateway)
+
+<p align="center">
+  <img src="https://img.shields.io/github/contributors/aanujkhurana/fullstack-FindMyLease?style=flat-square" />
+  <img src="https://img.shields.io/github/issues-pr/aanujkhurana/fullstack-FindMyLease?style=flat-square" />
+  <img src="https://img.shields.io/github/last-commit/aanujkhurana/fullstack-FindMyLease?style=flat-square" />
+  <!-- Code coverage badge (example from Codecov) -->
+  <img src="https://codecov.io/gh/aanujkhurana/fullstack-FindMyLease/branch/main/graph/badge.svg?token=YOUR_CODECOV_TOKEN"/>
+</p>
+
+
+
 
 ## 🚀 Tech Stack
 
