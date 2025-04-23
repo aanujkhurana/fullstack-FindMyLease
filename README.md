@@ -78,21 +78,22 @@ sequenceDiagram
 
 ```mermaid
 flowchart TD
-  Manager --> Applications
-  Manager --> Property
+  Manager -->|hasMany| Applications
+  Manager -->|hasMany| Property
 
-  Property --> Location
-  Property --> Leases
-  Leases --> Payments
+  Property -->|hasOne| Location
+  Property -->|hasMany| Leases
+  Leases -->|hasMany| Payments
 
-  Applications -->|Approved?| Decision{Approved?}
+  Applications -->|evaluatedBy| Decision{Approved?}
   Decision -->|YES| LeadsToLease
 
-  LeadsToLease --> Tenant
-  Location --> Tenant
-  Tenant --> CurrentResidences
+  LeadsToLease -->|creates| Tenant
+  Location -->|usedBy| Tenant
+  Tenant -->|hasOne| CurrentResidences
 
-  LeadsToLease --> Payments
+  LeadsToLease -->|generates| Payments
+
 ```
 
 
