@@ -95,6 +95,12 @@ flowchart TD
   LeadsToLease -->|generates| Payments
 
 ```
+#### 📝 Notes:
+> Applications are created by a Manager and evaluated for approval.
+> Upon approval, they lead to a lease, which creates a Tenant and triggers a Payment.
+> A Property is linked to a single Location but can have multiple Leases.
+> A Tenant is associated with a CurrentResidence (likely a view or latest Lease).
+
 
 
 ## 📁 Folder Structure
@@ -147,8 +153,6 @@ cd client && npm install
 cd ../server && npm install
 ```
 
----
-
 ### 4. Prisma Setup (server)
 
 ```bash
@@ -190,7 +194,6 @@ To contribute:
 3. Make your changes
 4. Submit a pull request
 
----
 
 ## 📜 License
 
