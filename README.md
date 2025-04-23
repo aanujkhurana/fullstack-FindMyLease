@@ -16,6 +16,15 @@
 
 ---
 
+## Tech Stack
+
+- **Frontend**: Next.js 13+, Mapbox, Cognito Auth, Tailwind CSS
+- **Backend**: Node.js, Express, Prisma ORM
+- **Database**: PostgreSQL (RDS)
+- **Cloud**: AWS S3, EC2, Amplify, API Gateway, VPC, Cognito
+- **Dev Tools**: PM2, Postman, Figma, pgAdmin, Mermaid
+- **Extra**: `.npmrc` for React 19 legacy support
+
 
 ## Quick Links
 
@@ -23,7 +32,6 @@
 - 🎨 [Figma Design Preview](./docs/ui-preview.jpg)
 - 🧩 [Entity Relationship Diagram](./docs/entity-diagram.jpg)
 
----
 
 ## Architecture
 
@@ -37,7 +45,25 @@ graph TD
   C --> G[VPC - Network]
 ```
 
----
+## User Flow
+
+```mermaid
+sequenceDiagram
+  participant User
+  participant Client
+  participant Backend
+  participant DB
+  participant Cognito
+
+  User->>Client: Sign up / login
+  Client->>Cognito: Authenticate user
+  Cognito-->>Client: Token
+  Client->>Backend: Fetch listings
+  Backend->>DB: Query
+  DB-->>Backend: Return results
+  Backend-->>Client: Send data
+```
+
 
 ## 📁 Folder Structure
 
@@ -53,8 +79,6 @@ fullstack-FindMyLease/
 │   └── ecosystem.config.js  # PM2 config
 └── docs/           # Diagrams, UI mocks
 ```
-
----
 
 ## Local Development Steps;
 
@@ -118,7 +142,6 @@ npx prisma migrate dev --name init
 npm run seed
 ```
 
----
 
 ### Start the Backend (via PM2 or Npde)
 
@@ -147,40 +170,6 @@ npm run dev
 > Frontend will be live at: `http://localhost:3001`  
 > Backend API served from: `http://localhost:3002`
 
----
-
-## User Flow
-
-```mermaid
-sequenceDiagram
-  participant User
-  participant Client
-  participant Backend
-  participant DB
-  participant Cognito
-
-  User->>Client: Sign up / login
-  Client->>Cognito: Authenticate user
-  Cognito-->>Client: Token
-  Client->>Backend: Fetch listings
-  Backend->>DB: Query
-  DB-->>Backend: Return results
-  Backend-->>Client: Send data
-```
-
-
----
-
-## Tech Stack
-
-- **Frontend**: Next.js 13+, Mapbox, Cognito Auth, Tailwind CSS
-- **Backend**: Node.js, Express, Prisma ORM
-- **Database**: PostgreSQL (RDS)
-- **Cloud**: AWS S3, EC2, Amplify, API Gateway, VPC, Cognito
-- **Dev Tools**: PM2, Postman, Figma, pgAdmin, Mermaid
-- **Extra**: `.npmrc` for React 19 legacy support
-
----
 
 ## Contribution
 
@@ -198,7 +187,6 @@ Create a bracnh
  
 Submit a pull request once you're done contributing.
 
----
 
 ## License
 
